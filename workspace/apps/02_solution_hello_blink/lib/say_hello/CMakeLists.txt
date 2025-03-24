@@ -7,3 +7,6 @@ target_include_directories(
     PUBLIC   
     ${CMAKE_CURRENT_SOURCE_DIR}/include
 )
+
+# Link the Zephyr interface to include the necessary compiler flags
+target_link_libraries(hello_lib PUBLIC zephyr_interface)
